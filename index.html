@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cat Clicker</title>
+    <title>beagle Clicker</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-    <ul id="cat-list"></ul>
-    <div id="cat">
+    <ul id="beagle-list"></ul>
+    
+    <div id="main">
+      <div id="BeagleEntries">
 
-        <h2 id="cat-name"></h2>
-        <div id="cat-count"></div>
-        <img id="cat-img" src="" alt="cute cat">
-
-    </div>
+        <h2 id="BeagleEntries" class="orange" data-bind="text: name"></h2>
+        <h4 data-bind="text: levels"></h4>
+        <div data-bind="text: clickCount"></div>
+        <img data-bind="click: incrementer, attr: {src: beaglePic}" src="" alt="cute beagle">
+  </div>  </div>
     <script src="js/lib/knockout-3.2.0.js"></script>
     <script src="js/app.js"></script>
+    <script src="bootstrap/js/jQuery.js"></script>
 </body>
 </html>

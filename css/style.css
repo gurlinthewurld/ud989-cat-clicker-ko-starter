@@ -1,0 +1,188 @@
+* {
+  padding:0;
+  margin:0;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+h1 {
+  font-size: 40px;
+  color: #F5A623;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #999999;
+  line-height: 29px;
+  padding: 10px;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
+}
+
+h2, h3, h4, h5 {
+  padding:10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.beagle-text {
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: left;
+  background-color: #9DC6CF;
+}
+
+
+p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+}
+
+a {
+  color: #1199C3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  color: #F3F3F3;
+  line-height: 28px;
+}
+
+.orange {
+  background-color: #7EB2C2;
+}
+
+.orange-text {
+  color: #F5AE23;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.gray {
+  background-color: #F3F3F3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #BAD6D6;
+}
+
+/* TODO: Replace with image later */
+#header {
+  background-color: #9DC6CF;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.center-content {
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%
+}
+
+ul {
+  list-style-type: none;
+  float:right;
+  padding-right: 100px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  color: #999999;
+  line-height: 34px;
+  float: left;
+  clear: both;
+
+}
+.beaglepic {
+  float: left;
+  padding: 10px;
+  width: 600px;
+}
+
+form {
+  float: left;
+  padding: 10px;
+  width: 600px;
+}
+
+div input {
+  /*float: left;*/
+  padding: 10px;
+  /*width: 50px;*/
+  margin: 10px;
+}
+
+.adminEdit {
+  float: left;
+  padding: 10px;
+  width: 600px;
+}
+
+img {
+  padding: 10px;
+}
+
+span {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .beaglepic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #header {
+    margin-top: 10%;
+  }
+  .beaglepic {
+    width: 150px;
+  }
+
+}
