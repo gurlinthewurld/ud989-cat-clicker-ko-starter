@@ -12,16 +12,29 @@
 
 </head>
 <body>
-    <ul id="beagle-list"></ul>
-    
-    <div id="main">
-      <div id="BeagleEntries">
 
-        <h2 id="BeagleEntries" class="orange" data-bind="text: name"></h2>
-        <h4 data-bind="text: levels"></h4>
+
+    <div id="main">
+      <ul id="beagle-list" data-bind="foreach: beagleList">
+        <li data-bind="text: name, click: $parent.clicker">
+          <!-- <b></b> -->
+      </li></ul>
+      <div id="BeagleEntries" class="orange" data-bind="with: currentBeagle">
+        <h2 data-bind="text: name"></h2>
+        <h4 data-bind="text: title"></h4>
         <div data-bind="text: clickCount"></div>
-        <img data-bind="click: incrementer, attr: {src: beaglePic}" src="" alt="cute beagle">
-  </div>  </div>
+        <img data-bind="click: $parent.incrementer, attr: {src: beaglePic}" alt="cute beagle">
+
+
+      <div id="BeagleEntries" class="orange">
+            <h2>nicknames</h2>
+            <ul id="beagle-list" data-bind="foreach: nicknames">
+              <li>
+                <b data-bind="text: $data"></b>
+            </li></ul>
+                  </div>
+    </div>
+    </div>
     <script src="js/lib/knockout-3.2.0.js"></script>
     <script src="js/app.js"></script>
     <script src="bootstrap/js/jQuery.js"></script>
